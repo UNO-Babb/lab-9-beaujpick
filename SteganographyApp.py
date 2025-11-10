@@ -1,6 +1,6 @@
-# This app will encode or decode text messages in an image file.
-# The app will use RGB channels so only PNG files will be accepted.
-# This technique will focus on Least Signifigant Bit (LSB) encoding.
+#Name: Beau Pick
+#Date: 11/9/25
+
 
 from PIL import Image
 import os
@@ -92,8 +92,8 @@ def decode(img):
 
 
 def main():
-    # Example usage
-    img = Image.open("pki.png")  # your original image
+#Ex.
+    img = Image.open("pki.png")  
     message = "This is a secret message hidden in the image!"
     encode(img, message)
     img.close()
